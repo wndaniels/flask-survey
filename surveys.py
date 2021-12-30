@@ -2,10 +2,10 @@ class Question:
     """Question on a questionnaire."""
 
     def __init__(self, question, choices=None, allow_text=False):
-        """Create question (assume Yes/No for choices."""
+        """Create question (assume Yes/No/Maybe for choices."""
 
         if not choices:
-            choices = ["Yes", "No"]
+            choices = ["Yes", "No", "Maybe"]
 
         self.question = question
         self.choices = choices
